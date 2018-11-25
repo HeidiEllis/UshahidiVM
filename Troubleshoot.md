@@ -1,6 +1,5 @@
 # Troubleshooting
 **Issues with Ushahidi Services:**
-
 - Go into Applications > System Tools > MATE Terminal 
 - Change the directory from ‘cd’ to platform-client
 - Use ‘ls -a’ command to peruse directory contents
@@ -20,4 +19,10 @@
     - NOTE: Should be consistent with current step 12 now
     - Two URLS should be present
     - To use local URL - click it
+
+**How to Fix Implementation Problems**
+#### Step 16 Error Correction:
+- Go into Applications > System Tools > MATE Terminal
+- Change directory 'cd' to platform client (if not already done).
+- Look at contents of directory using command 'Is-a' (different than command 'Is' - shows hidden files/folders).
 
