@@ -121,11 +121,23 @@ You may also use the shortcut “Alt + Ctrl + t” to open a terminal.
 
 ## Accessing the Ushahidi Website ##
 
-15. Open a new browser (Chrome/Firefox/Safari/etc) in the VM by clicking the Firefox icon next to the menu on the upper lefthand of the screen next to “System”, or your preferred browser if you are using your host system.
+15. How we need to tell the front end what addresses to listen to. Open a new browser (Chrome/Firefox/Safari/etc) in the VM by clicking the Firefox icon next to the menu on the upper lefthand of the screen next to “System”, or your preferred browser if you are using your host system.
 
-16.  Navigate to the address we found in **Step 14**, followed by “**:3000**”. From within the VM, this address will be “**localhost:3000**”. From the host system, this address in our case will be “**192.168.56.4:3000**”.
+17. Run 'pluma gulpfile.babel.js’ in the Mate Terminal (internal terminal).
 
-17. After opening the Ushahidi website loads, you should be greeted with a world map. It should look like the following.
+18. Edit file line 103 and change the host server address so that it matches the address from the .env file.
+
+19. Save and exit the file.
+
+20. Run ‘grep 192 gulpfile.babel.js’ in the Mate Terminal (internal terminal) again. This will tell the user what host file it is. This will only work if the file has been saved correctly.
+
+21. Run ‘npm run watch’ command while you are still in the Mate Terminal (internal terminal). User can leave this running and use Ctrl + C to close when finished.
+
+22. Check external URL (with ‘npm run watch’ command). We want to ensure that the host server address to match the address found in the .env file.
+
+23.  Navigate to the address we found in **Step 14**, followed by “**:3000**”. From within the VM, this address will be “**localhost:3000**”. From the host system, this address in our case will be “**192.168.56.4:3000**”.
+
+24. After opening the Ushahidi website loads, you should be greeted with a world map. It should look like the following.
 
 <p align="center">
   <img src="https://github.com/cmacdonell/UshahidiVM/blob/master/images/installation/07.png"/>
